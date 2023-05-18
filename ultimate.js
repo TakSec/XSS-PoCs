@@ -1,7 +1,7 @@
 // Log cookies, local storage, and DOM contents
-console.log(`%cHacked Cookies: %c${document.cookie}`, 'color: red', 'color: blue');
-console.log(`%cHacked Local Storage: %c${JSON.stringify(localStorage)}`, 'color: red', 'color: blue');
-console.log(`%cHacked DOM Contents: %c${document.documentElement.innerHTML}`, 'color: red', 'color: blue');
+console.log(`%cHacked Cookies: %c${document.cookie}`, 'color: red', 'color: white');
+console.log(`%cHacked Local Storage: %c${JSON.stringify(localStorage)}`, 'color: red', 'color: white');
+console.log(`%cHacked DOM Contents: %c${document.documentElement.innerHTML}`, 'color: red', 'color: white');
 
 // Create a fake login page
 const fakeLoginPage = `
@@ -26,6 +26,6 @@ form.addEventListener('submit', (e) => {
   const username = form.elements['username'].value;
   const password = form.elements['password'].value;
   
-  console.log(`%cHacked Username: %c${username}`, 'color: red', 'color: blue');
-  console.log(`%cHacked Password: %c${password}`, 'color: red', 'color: blue');
+  console.log(`%cHacked Username: %c${username}`, 'color: red', 'color: white');
+  console.log(`%cHacked Password: %c${password}`, 'color: red', 'color: white');
 });
